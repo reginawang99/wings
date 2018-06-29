@@ -58,8 +58,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class KBAPIJena implements KBAPI {
   // The ontology ontmodel
   OntModel ontmodel;
-
+  // (For Disk, OWL_MEM, A specification for OWL models that are stored in memory and do no additional entailment reasoning)
   OntModelSpec modelSpec;
+  // (OntSpec.PLAIN)
   OntSpec spec;
   Reasoner reasoner;
 
