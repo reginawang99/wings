@@ -142,6 +142,7 @@ public class KBAPIJena implements KBAPI {
     }
   }
 
+  // in DISK, modelspec is OntModelSpec.OWL_MEM;
   private void initialize(OntSpec spec) throws Exception {
     writeLock.lock();
     try {
