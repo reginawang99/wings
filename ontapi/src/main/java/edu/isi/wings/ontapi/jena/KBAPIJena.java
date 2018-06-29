@@ -56,7 +56,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class KBAPIJena implements KBAPI {
-  // The ontology ontmodel
+  // Ontology Interface (literally)
   OntModel ontmodel;
 
   OntModelSpec modelSpec;
@@ -355,6 +355,7 @@ public class KBAPIJena implements KBAPI {
     }
   }
 
+  //tries to return ontModel.getIndividual(id)
   public KBObject getIndividual(String id) {
     readLock.lock();
     try {	  
